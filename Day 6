@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+            
+        int test = scan.nextInt();
+        scan.nextLine();
+        
+        for (int j = 0; j < test; j++) { 
+        String word = scan.nextLine();
+
+        String[] string = new String[word.length()];
+        String string1 = "";
+        String string2 = "";
+        for(int i =0;i<word.length();i++) {
+            string[i]= word.substring(i, i+1);
+            
+        }
+        
+        for(int i=0; i<word.length();i=i+2) {
+            
+            string1 =string1 + string[i];
+        }
+        
+ for(int i=1; i<word.length();i=i+2) {
+            
+            string2 =string2 + string[i];
+        }
+     System.out.println(string1+" "+string2);
+    }
+       scan.close();
+       
+  }     
+}
+
