@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Binary_number {
+    static int count = 0, max = 0;
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        scan.close();
+        
+        while(num>0) {
+            if(num%2==1) {
+                count++;
+                if(count>max) {
+                    max = count;
+                }
+            }
+            else {
+                count= 0;
+            }
+            num = num/2;
+        }
+        System.out.println(max);
+    }
+}
