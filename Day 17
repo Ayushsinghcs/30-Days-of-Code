@@ -1,0 +1,18 @@
+
+
+class Calculator {
+    public int power(int n,int p) throws IOException {
+        try {
+            if(n<0 || p<0) {
+                throw new IOException("n and p should be non-negative");
+            }
+            
+        }finally {
+            
+        }
+        
+        return (int) Math.pow(n,p);
+    }
+    
+}
+
